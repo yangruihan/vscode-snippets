@@ -42,7 +42,7 @@
             "foreach (var ${1:item} in $2)",
             "{",
             "    $3",
-            "{",
+            "}",
         ]
     },
     "Create List": {
@@ -59,6 +59,18 @@
         "description": "create dictionary",
         "body": [
             "Dictionary<$2, $3> $1 = new Dictionary<$2, $3> ();",
+        ]
+    },
+    "If object is null": {
+        "scope": "csharp",
+        "prefix": "ifn",
+        "description": "if object is null",
+        "body": [
+            "if ($1 == null)",
+            "{",
+            "    $2",
+            "    ${3:return;}",
+            "}"
         ]
     },
 }
