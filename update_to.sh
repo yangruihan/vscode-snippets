@@ -24,7 +24,7 @@ then
     echo "ERROR: Visual Studio Code dose not exist"
 else
     echo "----- Do Copy -----"
-    echo "$DIR_PATH to $(pwd)"
+    echo "$(pwd) to $DIR_PATH"
 
     cp *.code-snippets "$DIR_PATH"
 
