@@ -26,7 +26,7 @@ else
     echo "----- Do Copy -----"
     echo "$DIR_PATH to $(pwd)"
 
-    cp -R "$DIR_PATH" .
+    cp "$DIR_PATH"/* .
 
     echo "--------------------------"
     echo "----- Update Success -----"
